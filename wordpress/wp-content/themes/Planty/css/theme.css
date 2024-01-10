@@ -1,0 +1,376 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+/* import de la font Syne*/
+
+body * {
+    font-family: 'Syne', sans-serif;
+}
+
+/*formulaire commande1*/
+.form1{
+	display: flex;
+	flex-direction: column;
+}
+
+	/*form commande1 partie fruit*/
+		.commande{
+			display:flex;
+			flex-direction:row;
+			justify-content:center;
+		}
+
+		.form1 h3{
+			color:#ffffff;
+			font-size: 30px;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+
+		.fruit{
+			display: flex;
+			flex-direction:column;
+			padding:20px;
+			align-items:center;
+		}
+
+		.fruit h2{
+			margin: 0;
+			font-weight:750;
+		}
+
+		.fraise, .pamplemousse, .framboise, .citron{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			color:#ffffff;
+			background-size:contain;
+			width:193.06px;
+			height:128.71px;
+
+		}
+		.fraise{
+			background-image: url("http://planty/wp-content/uploads/2023/12/jeremy-bezanger-0QgbyZdhX7k-unsplash-scaled-2.jpg");
+		}
+
+		.pamplemousse{
+			background-image: url("http://planty/wp-content/uploads/2023/12/estudio-bloom-tOitjphtIXU-unsplash.jpg");
+		}
+
+		.framboise{
+			background-image: url("http://planty/wp-content/uploads/2023/12/rodion-kutsaiev-4k8xEFW4_3Q-unsplash.jpg");
+		}
+
+		.citron{
+			background-image: url("http://planty/wp-content/uploads/2023/12/estudio-bloom-ezqnxsqUZ80-unsplash.jpg");
+		}
+		/*case de quantité à commander pour chaque type de fruit*/
+		.fruit input[type=number] {
+			display:inline-block;
+			text-align: center;
+			appearance: textfield;
+			width:39px;
+			height:56px;
+			font-size:16px;
+			font-family:inter;
+			margin:20px;
+		}
+
+/*separation entre les 2 parties de formulaire commande1*/
+		hr{
+			color:#ffffff;
+		}
+
+	/*formulaire commande1 partie coordonnée */
+			.coordonnee{
+				display: flex;
+				flex-direction:row ; 
+				justify-items: center;
+				color: #ffffff;
+				font-size: 20px;
+			}
+
+			.coordonnee h3{
+				margin-bottom: 30px;
+			}
+
+			.info{
+				margin-top: 60px;
+				padding-right: 7%;
+				border-right: 2px solid #ffffff;
+			}
+
+			.livraison{
+				margin-top: 60px;
+				padding-left: 7%;
+			}
+			.coordonnee input[type=text], .coordonnee input[type=email]{
+				width:383px;
+				height:71px;
+				border-radius:10px;
+				margin-top:20px;
+				margin-bottom: 30px;
+				
+			}
+			/*bouton envoi*/
+			.envoi{
+				display: flex;
+				justify-items: center;
+				background-color:#e0b9b4;
+				border-radius:10px !important;
+				width:198px;
+				height:55px;
+				font-size:15px;
+				color:#ffffff;
+				margin:40px auto;
+				border:none;
+			}
+
+			.envoi:hover{
+				background-color:#d2776a;
+			}
+/*formulaire nous rencontrer*/
+
+	/*titre formulaire*/
+.nouscontacter{
+	display:flex;
+	justify-content: center;
+	font-size:30px;
+	font-weight: 700;
+	margin:50px;
+}
+/*champs à remplir*/
+.nomchampform2 label, .nomchampform2, .message{
+	font-size:20px;
+	font-weight: 500;
+	color:black;
+
+}
+
+.form2 input[type=text], .form2 input[type=email]{
+	width:383px;
+	height:71px;
+	border-radius:10px;
+	margin:20px 0 40px 0;
+	
+}
+
+.message input[type=text]{
+	width:383px;
+	height:237px;
+}
+/*bouton d'envoi*/
+.form2 input[type=submit]{
+	display: flex;
+	justify-items: center;
+	background-color:#e0b9b4;
+	border-radius:10px;
+	width:198px;
+	height:55px;
+	font-size:15px;
+	color:#ffffff;
+    margin:auto;
+	border: none;
+}
+.form2 input[type=submit]:hover{
+	background-color:#d2776a;	
+}
+
+/*lien admin*/
+
+.menu-admin{
+color:black;
+padding-right: 50px;
+font-size: 16px;
+font-weight:600 ;
+}
+
+.hfe-nav-menu{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#menu-item-17:hover, .menu-admin:hover{
+font-size: 10px;
+}
+
+/* .elementor-shape-bottom{
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	filter:drop-shadow(0px 50px 2px blue);
+	
+	
+} */
+
+.elementor-element-9eaf44d{
+	border-radius: 0 0 20% 20%;
+    box-shadow: 0 10px 0 #dcd5cf;
+}
+
+/*media queries ecran tablette*/
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+
+	/*formulaire commande1 media queries*/
+	.form1 h3{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color:#ffffff;
+		font-size: 30px;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+
+	.commande{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+
+	}
+
+	.coordonnee{
+		display: flex;
+		flex-direction:column ; 
+		justify-items: center;
+		color: #ffffff;
+		font-size: 20px;
+	}
+
+	
+	.info{
+		margin-top: 60px;
+		border:none;
+		padding-right: 0;
+		
+	}
+
+	.livraison{
+		margin-top: 60px;
+		padding-left: 0;
+	}
+/*centrer le formulaire sur la page*/
+	div.wpcf7 {
+		text-align: center;
+	}
+
+/*champs du formulaire commande fruits*/
+.fruit input[type=number] {
+	display:inline-block;
+	text-align: center;
+    appearance: textfield;
+	width:39px;
+	height:56px;
+	font-size:16px;
+	font-family:inter;
+	margin:20px;
+}
+/* champs formulaire coordonnée*/
+.coordonnee input[type=text], .coordonnee input[type=email]{
+	width:383px;
+	height:71px;
+	border-radius:10px;
+	margin-top:20px;
+}
+}
+
+/*écran mobile*/
+@media screen and (max-width: 767px) {
+
+	.commande{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		align-items: center;
+	}
+
+	.form1 h3{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color:#ffffff;
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+
+	.coordonnee{
+		display: flex;
+		flex-direction:column ; 
+		justify-content: center;
+		color: #ffffff;
+		font-size: 20px;
+	}
+
+	.info, .livraison{
+		display:flex;
+		flex-direction: column;
+		justify-content:center;
+		align-items: center;
+		margin-top: 60px;
+		border:none;
+		padding-right: 0;
+		padding-left: 0;	
+	}
+
+	.livraison{
+		padding-top:60px;
+		border-top:2px solid white
+	}
+
+
+	/*centrerle formulaire sur la page - ATTENION même classe pour formulaire des pages nous rencontrer et commander*/
+	div.wpcf7 {
+		text-align: center;
+	}
+
+	.coordonnee input[type=text], .coordonnee input[type=email]{
+	
+		width:300px;
+		height:50px;
+		border-radius:10px;
+		margin-top:20px;
+	}
+
+	/*formulaire nous rencontrer*/
+
+/*titre formulaire*/
+.nouscontacter{
+	display:flex;
+	justify-content: center;
+	font-size:30px;
+	font-weight: 700;
+	margin:10px;
+}
+/*champs à remplir*/
+.nomchampform2 label, .nomchampform2, .message{
+	font-size:20px;
+	font-weight: 500;
+	color:black;
+
+}
+
+.form2 input[type=text], .form2 input[type=email]{
+	width:300px;
+	height:71px;
+	border-radius:10px;
+	margin:20px 0 40px 0;
+	
+}
+
+.message input[type=text]{
+	width:300px;
+	height:237px;
+}
+
+.form2 input[type=submit]{
+	display: flex;
+	justify-items: center;
+	background-color:#e0b9b4;
+	border-radius:10px;
+	width:198px;
+	height:55px;
+	font-size:15px;
+	color:#ffffff;
+    margin:auto;
+}
+}
